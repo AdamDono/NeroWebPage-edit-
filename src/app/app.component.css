@@ -1,0 +1,126 @@
+.logo img {
+  width: 40px;
+  margin-right: 200px;
+  margin-top: 10px;
+}
+
+li {
+  margin-top: 15px;
+  color: rgb(203, 121, 13);
+}
+
+.btn-light {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 50px;
+  margin-left: 100px;
+  background-color: rgb(239, 243, 243);
+}
+
+.btn-secondary {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 50px;
+  background-color: blue;
+}
+
+a {
+  color: rgb(110, 110, 109);
+}
+
+@media (max-width: 576px) {
+  .logo img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  li {
+    margin-top: 5px;
+  }
+  .btn-light, .btn-secondary {
+    display: none; /* Hide the buttons on small screens */
+  }
+}
+.equal-height-container {
+  display: flex;
+  margin-top: 100px;
+  align-items: stretch;
+}
+
+.equal-height-container .col {
+  flex: 1;
+}
+
+/* Optional: Adding some padding for better spacing */
+.content {
+  padding: 150px;
+}
+
+span {
+  color: rgb(217, 0, 255);
+}
+
+.head {
+  font-size: 40px;
+}
+
+.mint {
+  font-size: 25px;
+}
+
+.slogan {
+  font-size: 35px;
+}
+
+.appi {
+  margin-top: 20px;
+}
+
+.don-secondary {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 50px;
+  background-color: blue;
+  color: aliceblue;
+  height: 45px;
+  width: 200px;
+  font-size: 18px;
+}
+
+@media (max-width: 767.98px) {
+  .equal-height-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .equal-height-container .col {
+    margin-bottom: 20px;
+  }
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+}
+.trade {
+  text-align: center;
+}
+
+.services {
+  display: flex;
+}
+
+.service {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.poto {
+  width: 80px;
+}/*# sourceMappingURL=app.component.css.map */
