@@ -317,4 +317,46 @@ margin-top: 100px;
 }
 
 
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
 
+.nft-info {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.gallery {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-section {
+  padding-bottom: 10px;
+}
+
+.button {
+  float: left;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: calc(33.33% - 10px);
+  margin-right: 10px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.1);
+}
