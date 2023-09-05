@@ -96,10 +96,10 @@ margin-top: 10px;
     .equal-height-container {
       flex-direction: column;
       align-items: center;
-      margin-top: 10px;
+      margin-top: 5px;
     }
     .equal-height-container .col {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
     .content {
       padding: 20px;
@@ -138,42 +138,6 @@ text-align: center;
 
   .service h4 {
   margin-top: 20px;
-  }
-
-  .card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
-    margin-bottom: 120px;
-  }
-
-  .video {
-    flex: 1;
-    padding: 10px;
-  }
-
-  .text {
-    flex: 1;
-    padding: 10px;
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .card {
-      flex-direction: column;
-    }
-  }.nft {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 80px;
-    color: #010306;
   }
 
 
@@ -263,60 +227,6 @@ footer {
     }
   }
 
-  $n:5; /* number of images*/
-
-.gallery  {
-  --d: 10s; /* duration */
-  
-  display: grid;
-  width: 220px;
-  margin-bottom: 100px;
-display: flex;
-margin-left: 120px;
-margin-top: 100px;
-}
-.gallery > img {
-  grid-area: 1/1;
-  width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-  border: 10px solid #f2f2f2;
-  box-shadow: 0 0 4px #0007;
-  z-index: 2;
-  animation: 
-    slide var(--d) infinite,
-    z-order var(--d) infinite steps(1);
-}
-.gallery img:last-child {
-  animation-name: slide, z-order-last;
-}
-
-@for $i from 1 to ($n + 1) {
-  .gallery > img:nth-child(#{$i}) {
-    animation-delay: calc(#{(1 - $i)/$n}*var(--d));
-    --r: #{(-20 + random(40))*1deg};
-  }
-}
-
-@keyframes slide {
-  #{50/$n}%  {transform: translateX(120%) rotate(var(--r))}
-  0%,
-  100%,
-  #{100/$n}% {transform: translateX(0%)   rotate(var(--r))}
-}
-
-@keyframes z-order {
-  #{50/$n}%,
-  #{100/$n}% {z-index: 1}
-  #{100 - 100/$n}% {z-index: 2}
-}
-
-@keyframes z-order-last {
-  #{50/$n}%,
-  #{100/$n}% {z-index: 1}
-  #{100 - 50/$n}% {z-index: 2}
-}
-
 
 .main-container {
   display: flex;
@@ -360,4 +270,25 @@ margin-top: 100px;
 
 .image-wrapper:hover img {
   transform: scale(1.1);
+}
+
+#learn {
+  text-align: center; /* Center-align the text */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.font{
+  color: rgb(169, 166, 166);
+  font-weight: 300;
+  font: 17px Helvetica, sans-serif;
+}
+
+.best{
+  color: rgb(169, 166, 166);
+  font-weight: 100;
+  font: 17px Helvetica, sans-serif; 
 }
