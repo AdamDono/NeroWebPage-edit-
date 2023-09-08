@@ -9,22 +9,22 @@
     </div>
   
    <li class="nav-item">
-      <a class="nav-link" [routerLink]="['/about']" > About</a>
+      <a class="nav-link" [routerLink]="['/about']">About</a>
     </li>
    
     <li class="nav-item">
-      <a class="nav-link"  [routerLink]="['/purchase']"  >Buy & Sell</a>
+      <a class="nav-link"  [routerLink]="['/purchase']">Buy & Sell</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">NFT'S</a>
+      <a class="nav-link"  [routerLink]="['/marketplace']">NFT'S</a>
     </li>
   
     <li class="nav-item">
       <a class="nav-link" [routerLink]="['/nero']">Nero</a>
     </li>
   
-    <button type="button" class="btn btn-light btn-sm"> &nbsp; Sign In &nbsp;</button>
-    <button type="button" class="btn btn-secondary btn-sm"> &nbsp; Get Started &nbsp; </button>
+    <button type="button" [routerLink]="['/login']" class="btn btn-light btn-sm "> &nbsp; Sign In &nbsp;</button>
+    <button type="button"  [routerLink]="['/register']" class="btn btn-secondary btn-sm"> &nbsp; Get Started &nbsp; </button>
   
   </ul>
   
