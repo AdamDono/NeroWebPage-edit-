@@ -1,1 +1,61 @@
-<p>register works!</p>
+<div class="container mt-5 mb-3">
+
+<h1 class="text-center" >Enter Your Details</h1>
+
+  <form class="content"  [formGroup]="registerForm" (ngSubmit)="submitData()">
+    <img src="" alt="">
+<div class="form-group">
+    <label>First Name</label>
+    <input type="text" formControlName="FirstName" class="form-control" placeholder="Enter Your First Name" >
+    
+
+<div *ngIf="FirstName.invalid && (FirstName.touched || FirstName.dirty ) ">
+<span class="error" **ngIf="FirstName.errors?.Required" >First Name Is required</span>
+<span class="error" **ngIf="FirstName.errors?.pattern" >*Enter Only Characters</span>
+
+
+</div>  
+
+</div>
+
+<div class="mt-3 mb-3 form-group">
+    <label>Last Name</label>
+    <input type="text" formControlName="LastName"  class="form-control" placeholder="Enter Your Last Name" >
+    <div *ngIf="LastName.invalid && (LastName.touched || LastName.dirty ) ">
+        <span class="error" **ngIf="LastName.errors?.Required" >Last NameIs required</span>
+        <span class="error" **ngIf="LastName.errors?.pattern" >*Enter Only Characters</span>
+        
+        
+        </div>  
+</div>
+
+<div class="mt-3 mb-3 form-group">
+    <label>Email</label>
+    <input type="text" formControlName="Email"  class="form-control" placeholder="Enter Your Email" >
+    <div *ngIf="Email.invalid && (Email.touched || Email.dirty ) ">
+        <span class="error" **ngIf="Email.errors?.Required" >* Email Is Required</span>
+        <span class="error" **ngIf="Email.errors?.pattern" >*Enter The Correct Email</span>
+        
+        
+        </div>  
+</div>
+<div class="mt-3 mb-3 form-group">
+    <label>Phone</label>
+    <input type="text" formControlName="Phone"  class="form-control" placeholder="+227033850583" >
+    <div *ngIf="Phone.invalid && (Phone.touched || Phone.dirty) ">
+        <span class="error" **ngIf="Phone.errors?.Required" >* Phone Numbers Is Required</span>
+        <span class="error" **ngIf="Phone.errors?.pattern" >*Enter Only Number</span>
+        
+        
+        </div>  
+</div>
+<button type="button"  class=" mb-3 btn btn-dark btn-sm" > &nbsp; Log In&nbsp;</button>
+<div class="icons" >
+    <i class="fi fi-brands-instagram"></i>
+    <i class="fi fi-brands-facebook"></i>
+    <i class="fi fi-brands-whatsapp"></i>
+    <i class="fi fi-brands-twitter"></i>
+   </div>
+
+</form>
+</div>
