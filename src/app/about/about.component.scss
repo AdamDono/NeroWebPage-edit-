@@ -1,0 +1,48 @@
+
+
+.logo img {
+    width: 40px;
+margin-right: 200px;
+margin-top: 10px;
+
+  }
+  li{
+    margin-top: 15px;
+    color: rgb(203, 121, 13);
+  }
+  .btn-light{
+    margin-top: 20px;
+    margin-bottom: 10px;
+   margin-right: 10px;
+   border-radius: 50px;
+   margin-left: 100px;
+   background-color: rgb(239, 243, 243);
+  }
+
+  .btn-secondary{
+    margin-top: 20px;
+    margin-bottom: 10px;
+   margin-right: 10px;
+   border-radius: 50px;
+   background-color: blue;
+  }
+  a{
+    color: rgb(110, 110, 109);
+  }
+  
+  @media (max-width: 576px) 
+   {
+    .logo img {
+      width: 30px;
+      margin-right: 10px;
+    }
+  
+    li {
+      margin-top: 5px;
+    }
+  
+    .btn-light, .btn-secondary {
+    align-items: center;
+    }
+
+}
