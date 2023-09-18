@@ -319,3 +319,38 @@ footer {
 }
 
 }
+
+
+@media (max-width: 768px) {
+  .main-container {
+      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .text-section {
+      text-align: left;
+  }
+
+  .text-section h2 {
+      font-size: 20px;
+  }
+
+  .text-section p.best {
+      font-size: 14px;
+  }
+
+  .btn {
+      margin-top: 10px;
+  }
+
+  .gallery {
+      flex-direction: column;
+      align-items: center;
+      width: 902px;
+  }
+
+  .image-wrapper {
+      margin: 10px 0;
+  }
+}
