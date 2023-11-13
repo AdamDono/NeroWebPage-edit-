@@ -1,3 +1,125 @@
-.error{
-    color: red;
+
+.logo img {
+    width: 90px;
+margin-right:600px;
+margin-top: 35px;
+align-items: center;
+
+  }
+.log{
+    margin-bottom: 36px;
+    margin-top: 52px;
 }
+.input{
+    height: 40px;
+    width: 508px;
+    margin-left: 12px;
+border-radius: 50px;
+
+
+}
+
+.error{
+ 
+  color: rgb(227, 54, 24);
+}
+
+.field{
+    margin-top: 10px;
+}
+.label{
+    margin-top: 10px;
+}
+.button{
+    width: 508px;
+    margin-top: 19px;
+border-radius:10px ;
+}
+
+
+.container {
+    display: flex;
+   
+  }
+  
+  .form-container {
+    flex: 1;
+
+
+  }
+  
+  .image-container {
+    flex: 1;
+    display: flex;
+
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+  }
+  
+
+  .h{
+  align-content: center;
+  }
+
+.login{
+    color: blue;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+
+    }
+  
+    .form-container {
+      width: 100%; 
+      box-shadow: none;
+      border: 0;
+      
+    }
+    .button{
+        width: 260px;
+    }
+    .image-container {
+      display: none; 
+    }
+
+    .card-body{
+        margin-top: -39px;
+  
+    }
+
+
+    /* Hide the 'log' div on mobile */
+    .log {
+        display: none; 
+        text-decoration: none;
+        visibility: hidden;
+        margin-top: 1px;
+        margin-bottom: -30px;
+      }
+    
+      /* Show the mobile heading */
+      .mobile-heading {
+        display: block; 
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: none; 
+      }
+
+      
+  }
+
+  /*the text wont be visible on larger screens */
+  @media (min-width: 769px) {
+    .mobile-heading {
+      display: none;
+    }
+  }

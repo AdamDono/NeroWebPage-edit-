@@ -1,61 +1,92 @@
-<div class="container mt-5 mb-3">
+<!--Code written by Adam Dono on the 2023/10/10  -->
 
-<h1 class="text-center" >Enter Your Details</h1>
 
-<form class="content" [formGroup]="registerForm" (ngSubmit)="submitData()">
-    <img src="" alt="">
-<div class="form-group">
-    <label>First Name</label>
-    <input type="text" formControlName="FirstName" class="form-control" placeholder="Enter Your First Name" >
+
+
+<div class="log d-flex justify-content-center  "><img src="/src/" alt="">
+</div>
+
+<div class="card  shadow-lg p-3 mb-5   rounded mx-auto p-2  mt-1 "  style="width: 80%;">
+  <div class="card-body">
+
+
+<div class="container">
+  <div class="form-container">
+   
+ <h3 class="log d-flex justify-content-center md-1 " >Register For An Account</h3>
+ <div class="container">
+  <div class="form-container">
+
+       <!-- this will be visible only on mobile view -->
+    <h1 class="mobile-heading">Register To Continue</h1>
+
+  </div>
+</div>
     
+ <form class="form " [formGroup]="registerForm" (ngSubmit)="onSubmit()">
 
-<div *ngIf="FirstName.invalid && (FirstName.touched || FirstName.dirty ) ">
-<span class="error" ngIf="FirstName.errors?.Required" >First Name Is required</span>
-<span class="error"ngIf="FirstName.errors?.pattern" >*Enter Only Characters</span>
+   <div class="field row">
+     <label class="label  ">Username</label>
+     <input type="text" class="input mt-1 " formControlName="username" placeholder="Enter UserName" [class.invalid]="registerForm.get('username')
+     ?.invalid &&(registerForm.get('username')?.dirty || registerForm.get('username')?.touched || isSubmitted ) " /> 
 
 
-</div>  
+<span *ngIf="registerForm.get('username')
+?.invalid &&(registerForm.get('username')?.dirty || registerForm.get('username')?.touched || isSubmitted)" class="error" >This Field Is Required</span>
 
-</div>
 
-<div class="mt-3 mb-3 form-group">
-    <label>Last Name</label>
-    <input type="text" formControlName="LastName"  class="form-control" placeholder="Enter Your Last Name" >
-    <div *ngIf="LastName.invalid && (LastName.touched || LastName.dirty ) ">
-        <span class="error" ngIf="LastName.errors?.Required" >Last NameIs required</span>
-        <span class="error" ngIf="LastName.errors?.pattern" >*Enter Only Characters</span>
-        
-        
-        </div>  
-</div>
+   </div>  
+   
+   <div class="field row ">
+     <label class="label ">Password</label>
+     <input type="text " class="input mt-1  " formControlName="password" placeholder="Enter Your PassWord"  [class.invalid]="registerForm.get('password')
+     ?.invalid &&(registerForm.get('password')?.dirty || registerForm.get('password')?.touched) "/>  
+     <span *ngIf="registerForm.get('password')
+     ?.invalid &&(registerForm.get('password')?.dirty || registerForm.get('password')?.touched || isSubmitted)" class="error" >This Field Is Required</span>
+     
+     
+   </div>  
+  
+   <div class="field row ">
+     <label class="label ">Email</label>
+     <input type="text" class="input mt-1  " formControlName="email" placeholder="Enter Your Email"  [class.invalid]="registerForm.get('email')
+     ?.invalid &&(registerForm.get('email')?.dirty || registerForm.get('email')?.touched) "/> 
 
-<div class="mt-3 mb-3 form-group">
-    <label>Email</label>
-    <input type="text" formControlName="Email"  class="form-control" placeholder="Enter Your Email" >
-    <div *ngIf="Email.invalid && (Email.touched || Email.dirty ) ">
-        <span class="error" ngIf="Email.errors?.Required" >* Email Is Required</span>
-        <span class="error" ngIf="Email.errors?.pattern" >*Enter The Correct Email</span>
-        
-        
-        </div>  
-</div>
-<div class="mt-3 mb-3 form-group">
-    <label>Phone</label>
-    <input type="text" formControlName="Phone"  class="form-control" placeholder="+227033850583" >
-    <div *ngIf="Phone.invalid && (Phone.touched || Phone.dirty ) ">
-        <span class="error" ngIf="Phone.errors?.Required" >* Phone Numbers Is Required</span>
-        <span class="error" ngIf="Phone.errors?.pattern" >*Enter Only Number</span>
-        
-        
-        </div>  
-</div>
-<button type="button"  class=" mb-3 btn btn-dark btn-sm"  > &nbsp; Log In&nbsp;</button>
-<div class="icons" >
-    <i class="fi fi-brands-instagram"></i>
-    <i class="fi fi-brands-facebook"></i>
-    <i class="fi fi-brands-whatsapp"></i>
-    <i class="fi fi-brands-twitter"></i>
+
+<span *ngIf="registerForm.get('email')
+?.invalid &&(registerForm.get('email')?.dirty || registerForm.get('email')?.touched || isSubmitted)" class="error" >Enter A Valid Emaiil</span>
+
+
+   </div>  
+
+   <div class="field row ">
+    <label class="label ">Phone Number</label>
+    <input type="text" class="input mt-1  " formControlName="phone" placeholder="Enter Your Phone Number"  [class.invalid]="registerForm.get('phone')
+    ?.invalid &&(registerForm.get('phone')?.dirty || registerForm.get('phone')?.touched) "/> 
+
+
+<span *ngIf="registerForm.get('phone')
+?.invalid &&(registerForm.get('phone')?.dirty || registerForm.get('phone')?.touched || isSubmitted)" class="error" >This Field Is Required</span>
+
+
+  </div>  
+
+   <div>
+     <button type="submit " class="button btn btn-primary "  [routerLink]="['/src/app/marketplace']"  >  register</button>
+     <h6 class="d-flex justify-content-center mt-4"  [routerLink]="['../login']"   >Already Have An Account? &nbsp;  <Span class="login"   >Login</Span> </h6>
    </div>
 
+
 </form>
+  </div>
+  <div class="image-container">
+    <img src="path_to_your_image.jpg" alt="Your Image"/>
+  </div>
 </div>
+
+    </div>    
+   
+</div>
+
+<p class="copyright-text  d-flex justify-content-center md-1 ">Copyright &copy; 2023 All Rights Reserved by Nero
+  

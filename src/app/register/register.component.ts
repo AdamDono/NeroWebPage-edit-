@@ -1,6 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -9,40 +9,32 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { 
-    
-  }
-  registerForm:any;
-
+  registerForm = this.fb.group({
+ 
+   username: ['',Validators.required],
+   password:['',Validators.required],
+   email: ['', [Validators.required, Validators.email]],
+   phone:['',Validators.required],
+ 
+  });
+ register: FormGroup<any> | undefined;
+ 
+   title: any;
+ 
+   isSubmitted= false; 
+   constructor (private fb: FormBuilder) {}
   ngOnInit(): void {
-    this.registerForm = new FormGroup({
-      "FirstName": new FormControl (null, [Validators.required,Validators.pattern('[a-zA-Z]*')]),
-      "LastName": new FormControl (null,[Validators.required,Validators.pattern('[a-zA-Z]*')]),
-      "Email": new FormControl (null,[Validators.required,Validators.email]),
-      "Phone": new FormControl (null,[Validators.required,Validators.pattern('[0-9]*')])
-    }); 
+    throw new Error('Method not implemented.');
   }
-
-  //submit funtion
-  submitData()
-{
-  console.log(this.registerForm );
-
-  if (this.registerForm.valid)
-  { 
-
-alert(`Thank You ${this.registerForm.value.FirstName}`)
-
-
-  }
-
-
+ 
+   onSubmit(): void {
+ console.log('Submitted form', 
+ this.registerForm.value,
+ this.registerForm.invalid);
+ 
+ 
+ 
+   }
+     
+ }
   
-}
-
-get FirstName() {return this.registerForm.get('FirstName');}
-get LastName() {return this.registerForm.get('LastName');}
-get Email() {return this.registerForm.get('Email');}
-get Phone() {return this.registerForm.get('Phone');}
-
-}
