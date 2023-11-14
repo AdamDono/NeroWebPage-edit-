@@ -57,32 +57,35 @@ margin-top: 35px;
    
   }
 .equal-height-container1 {
-  margin-top: 2000px;
-  display: flex;
-   align-items: stretch;
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+
 }
 .equal-height-container {
   display: flex;
   margin-top: 100px;
-  align-items: stretch;
+margin-bottom: 150px;
+
+
 }
-.equal-height-container .col {
-  flex: 1;
- 
-}
+
 /* Optional: Adding some padding for better spacing */
-.content {
+.content1 {
   
-  padding: 89px;
-  
-}
+
+margin-left: -500px;
+margin-top: 50px;
+font-size: larger;
+padding-right: 90px;
+line-height: 35px;}
 
 span{
   color: rgb(217, 0, 255);
 }
 
-.head{
-  font-size: 45px;
+.image-container{
+  margin-left: 190px;
 }
 .mint{
   font-size:30px;
@@ -132,8 +135,6 @@ span{
   .image-container img {
     width: 100%;
     height: auto;
-  
- 
   }
  
 }
