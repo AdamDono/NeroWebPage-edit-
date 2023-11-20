@@ -1,3 +1,4 @@
+
 import { LandingComponent } from './landing/landing.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -7,6 +8,7 @@ import { PurchaseComponent } from './purchase/purchase.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { CoinDetailsComponent } from './coin-details/coin-details.component';
 
 
 
@@ -21,6 +23,7 @@ const routes: Routes = [
   {path: 'marketplace', component:MarketplaceComponent},
   {path: 'login', component:LoginComponent},
   {path: 'register', component:RegisterComponent},
+  {path: 'coin-details/:id', component:CoinDetailsComponent},
   
 
 ];

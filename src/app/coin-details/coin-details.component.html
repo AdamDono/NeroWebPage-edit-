@@ -1,0 +1,44 @@
+<div class="cointainer-fluid  ">
+
+    <div class="row">
+     
+        <div class="col-md-3 details">
+    
+            <div class="img ">
+    
+                <img [src]="coinData?.image?.large " alt="">
+                <h3 class="text-center " style="font-size: 29px;"  > {{coinData?.name}} </h3>
+                <h2 [innerHTML]="coinData?.description?.en.split( '. ')[0]"></h2>
+                <div class="more-details">  <span class="title" >Rank: </span> <span class="Value" >{{coinData?.market_cap_rank}}</span><br> <br>
+                 <span class="title" >Curent Price:  </span> <span class="Value" >{{coinData?.market_data.current_price.usd | currency }}</span> <br> <br>
+                 <span class="title" >MarketCap: </span> <span class="Value" >{{coinData?.market_cap.market_cap.usd | currency  }}</span> 
+               
+                
+                </div>
+    
+    
+            </div>
+             
+        </div> 
+         
+    </div>
+    
+    </div>
+    
+    
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-12 text-center text-md-start mb-3 mb-md-0">
+              <p class="copyright-text">
+                Copyright &copy; 2023 All Rights Reserved by Nero
+              </p>
+            </div>
+            <div class="col-md-6 col-12 text-center text-md-end">
+            <button class="btn btn-transparent d-block d-md-inline-block"><i class="lab la-google-play"></i>Get On PlayStore</button>
+          
+              <button class="btn btn-dark d-block d-md-inline-block"><i class="lab la-apple"></i> Get On PlayStore</button>
+            </div>
+          </div>
+        </div>
+      </footer>
