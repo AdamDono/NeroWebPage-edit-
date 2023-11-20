@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NeroComponent } from './nero.component';
+import { NerotokenComponent } from './nerotoken.component';
 
-describe('NeroComponent', () => {
-  let component: NeroComponent;
-  let fixture: ComponentFixture<NeroComponent>;
+describe('NerotokenComponent', () => {
+  let component: NerotokenComponent;
+  let fixture: ComponentFixture<NerotokenComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NeroComponent ]
+      declarations: [ NerotokenComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(NeroComponent);
+    fixture = TestBed.createComponent(NerotokenComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

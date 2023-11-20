@@ -5,13 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 import { AboutComponent } from './about/about.component';
-import { NeroComponent } from './nero/nero.component';
+
 import { PurchaseComponent } from './purchase/purchase.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { NerotokenComponent } from './nerotoken/nerotoken.component';
 
 
 @NgModule({
@@ -19,11 +19,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     LandingComponent,
     AboutComponent,
-    NeroComponent,
+
     PurchaseComponent,
     MarketplaceComponent,
     RegisterComponent,
     LoginComponent,
+    NerotokenComponent,
+
 
   
  

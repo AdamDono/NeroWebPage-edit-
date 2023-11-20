@@ -1,8 +1,8 @@
 import { LandingComponent } from './landing/landing.component';
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
-import { NeroComponent } from './nero/nero.component';
+import { NerotokenComponent } from './nerotoken/nerotoken.component';
 import { PurchaseComponent } from './purchase/purchase.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { LoginComponent } from './login/login.component';
@@ -16,7 +16,7 @@ const routes: Routes = [
   {path: '', component: LandingComponent},
   {path: 'landing', component: LandingComponent},
   {path: 'about', component: AboutComponent},
-  {path: 'nero', component:NeroComponent},
+{path: 'nerotoken', component:NerotokenComponent},
   {path: 'purchase', component:PurchaseComponent},
   {path: 'marketplace', component:MarketplaceComponent},
   {path: 'login', component:LoginComponent},
