@@ -60,7 +60,7 @@
                           <img [src]="row.image"width="100" class="img-fluid" alt="">
   
                           <div class="card-body">
-                              <h5 class="card-title">{{row.symbol | uppercase}} <span class="text-danger">{{row.market_cap_change_percentage_24h}}%</span></h5>
+                              <h5 class="card-title"> {{row.symbol | uppercase}} <span class="text-danger"> &nbsp; {{  &nbsp;  &nbsp;   &nbsp; row.market_cap_change_percentage_24h}}%</span></h5>
                               <p class="card-text">{{row.current_price | currency}}</p>
                               
                           </div>
@@ -70,8 +70,6 @@
                       </div>
   
                    </ng-container>
-  
-  
               </div>
           </marquee>
   
@@ -84,7 +82,7 @@
   <div class="container mt-3 ">
   <table></table>
   <mat-form-field>
-      <mat-label>Filter</mat-label>
+      <mat-label> Search </mat-label>
       <input matInput (keyup)="applyFilter($event)" placeholder="Nero Token " #input>
     </mat-form-field>
     

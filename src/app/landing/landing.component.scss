@@ -23,8 +23,8 @@ margin-top: 35px;
    margin-right: 10px;
    border-radius: 10px;
    margin-left: 100px;
-   background-color: rgb(239, 243, 243);
-   background-color: blue;
+
+   background-color:#155F63;
   }
  
   @media (max-width: 576px) 
@@ -72,11 +72,12 @@ margin-top: 35px;
 
 
   span{
-    color: rgb(217, 0, 255);
+   // color: rgb(217, 0, 255);
+   color: #155F63;
   }
 
   .head{
-    font-size: 45px;
+    font-size: 40px;
   }
   .mint{
     font-size:30px;
@@ -97,7 +98,7 @@ margin-top: 35px;
     margin-bottom: 10px;
    margin-right: 10px;
 
-   background-color: blue;
+   background-color:#4E4FEB;
    color: aliceblue;
    height: 45px;
    width: 200px;
