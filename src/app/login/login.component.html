@@ -1,82 +1,83 @@
 <!--Code written by Adam Dono on the 2023/10/10  -->
 
 
+<div class="card-bodyy">
 
-<div class="log d-flex justify-content-center  "><h1>Nero Logo</h1>
-
-</div>
-
-<div class="card  shadow-lg p-3 mb-5   rounded mx-auto p-2  mt-1 "  style="width: 80%;">
-  <div class="card-body">
-
-
-<div class="container">
-  <div class="form-container">
-   
- <h3 class="log d-flex justify-content-center md-1 " >Login To Your Account</h3>
- <div class="container">
-  <div class="form-container">
-
-       <!-- this will be visible only on mobile view -->
-    <h1 class="mobile-heading">Login To Continue</h1>
-
+  <div class="card  shadow-lg  rounded mx-auto p-2  "  style="width: 80%;">
+    <div class="card-body">
+  
+  
+  <div class="container">
+    <div class="form-container">
+     
+   <h3 class="log d-flex justify-content-center md-1 " > <span> Login&nbsp; </span>To Your  <span> &nbsp; Account</span></h3>
+   <div class="container">
+    <div class="form-container">
+  
+         <!-- this will be visible only on mobile view -->
+      <h1 class="mobile-heading">Login To Continue</h1>
+  
+    </div>
   </div>
-</div>
+      
+   <form class="form " [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  
+     <div class="field row">
+       <label class="label  ">Username</label>
+       <input type="text" class="input mt-1 " formControlName="username" placeholder="Enter UserName" [class.invalid]="loginForm.get('username')
+       ?.invalid &&(loginForm.get('username')?.dirty || loginForm.get('username')?.touched || isSubmitted ) " /> 
+  
+  
+  <span *ngIf="loginForm.get('username')
+  ?.invalid &&(loginForm.get('username')?.dirty || loginForm.get('username')?.touched || isSubmitted)" class="error" >This Field Is Required</span>
+  
+  
+     </div>  
+     
+     <div class="field row ">
+       <label class="label ">Password</label>
+       <input type="text " class="input mt-1  " formControlName="password" placeholder="Enter Your PassWord"  [class.invalid]="loginForm.get('password')
+       ?.invalid &&(loginForm.get('password')?.dirty || loginForm.get('password')?.touched) "/>  
+       <span *ngIf="loginForm.get('password')
+       ?.invalid &&(loginForm.get('password')?.dirty || loginForm.get('password')?.touched || isSubmitted)" class="error" >This Field Is Required</span>
+       
+       
+     </div>  
     
- <form class="form " [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-
-   <div class="field row">
-     <label class="label  ">Username</label>
-     <input type="text" class="input mt-1 " formControlName="username" placeholder="Enter UserName" [class.invalid]="loginForm.get('username')
-     ?.invalid &&(loginForm.get('username')?.dirty || loginForm.get('username')?.touched || isSubmitted ) " /> 
-
-
-<span *ngIf="loginForm.get('username')
-?.invalid &&(loginForm.get('username')?.dirty || loginForm.get('username')?.touched || isSubmitted)" class="error" >This Field Is Required</span>
-
-
-   </div>  
-   
-   <div class="field row ">
-     <label class="label ">Password</label>
-     <input type="text " class="input mt-1  " formControlName="password" placeholder="Enter Your PassWord"  [class.invalid]="loginForm.get('password')
-     ?.invalid &&(loginForm.get('password')?.dirty || loginForm.get('password')?.touched) "/>  
-     <span *ngIf="loginForm.get('password')
-     ?.invalid &&(loginForm.get('password')?.dirty || loginForm.get('password')?.touched || isSubmitted)" class="error" >This Field Is Required</span>
-     
-     
-   </div>  
+     <div class="field row ">
+       <label class="label ">Email</label>
+       <input type="text" class="input mt-1" formControlName="email" placeholder="Enter Your Email"  [class.invalid]="loginForm.get('email')
+       ?.invalid &&(loginForm.get('email')?.dirty || loginForm.get('email')?.touched) "/> 
   
-   <div class="field row ">
-     <label class="label ">Email</label>
-     <input type="text" class="input mt-1  " formControlName="email" placeholder="Enter Your Email"  [class.invalid]="loginForm.get('email')
-     ?.invalid &&(loginForm.get('email')?.dirty || loginForm.get('email')?.touched) "/> 
-
-
-<span *ngIf="loginForm.get('email')
-?.invalid &&(loginForm.get('email')?.dirty || loginForm.get('email')?.touched || isSubmitted)" class="error" >Enter A Valid Emaiil</span>
-
-
-   </div>  
-
-
-   <div>
-     <button type="submit " class="button btn btn-primary "  [routerLink]="['../marketplace']">Login</button>
-     <h6 class="d-flex justify-content-center mt-4"  [routerLink]="['../register']" >Don't Have An Account? &nbsp;  <Span class="login">Sign Up</Span> </h6>
-   </div>
-
-
-</form>
+  
+  <span *ngIf="loginForm.get('email')
+  ?.invalid &&(loginForm.get('email')?.dirty || loginForm.get('email')?.touched || isSubmitted)" class="error" >Enter A Valid Emaiil</span>
+  
+  
+     </div>  
+  
+  
+     <div>
+       <button type="submit " class="button btn btn-primary" [routerLink]="['../marketplace']">Login</button>
+       <h6 class="d-flex justify-content-center mt-4"  [routerLink]="['../register']" >Don't Have An Account? &nbsp;  <Span class="login">Sign Up</Span> </h6>
+     </div>
+  
+  
+  </form>
+    </div>
+    <div class="image-container">
+      <img src="../assets/nero-low-resolution-logo-color-on-transparent-background.png" alt="Your Image"/>
+    </div>
   </div>
-  <div class="image-container">
-    <img src="path_to_your_image.jpg" alt="Your Image"/>
+  
+      </div>    
+     
   </div>
-</div>
-
-    </div>    
-   
-</div>
-
-<p class="copyright-text  d-flex justify-content-center md-1 ">Copyright &copy; 2023 All Rights Reserved by Nero
+  
+  <p class="copyright-text  d-flex justify-content-center md-1 ">Copyright &copy; 2023 All Rights Reserved by Nero
+    
+  
   
 
+
+</div>

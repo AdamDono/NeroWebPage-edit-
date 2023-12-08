@@ -2,7 +2,6 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
-
 import { Route, Router, RouterModule } from '@angular/router';
 import { ApiServiceService } from '../servi/api.service.service';
 
