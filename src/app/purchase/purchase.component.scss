@@ -14,7 +14,7 @@ margin-top: 35px;
     margin-top:55px;
     margin-bottom: 60px;
    margin-right: 10px;
-   border-radius: 50px;
+   border-radius: 10px;
 
   }
 
@@ -22,7 +22,7 @@ margin-top: 35px;
     margin-top: 55px;
     margin-bottom: 60px;
    margin-right: 10px;
-   border-radius: 50px;
+   border-radius: 10px;
    margin-left: 100px;
    background-color: rgb(239, 243, 243);
 
@@ -200,3 +200,28 @@ margin-top: 35px;
         display: none;
       }
     }
+
+
+.btn2{
+  width: 136px;
+height: 35px;
+
+color: #dce9e9;
+background-color:#145F63;
+border: #ffffff;
+margin-right: 40px;
+font-size: large;
+
+}
+
+
+.btn3{
+  width: 136px;
+height: 35px;
+margin-left: 200px;
+color: #070808;
+background-color:#F5F5F5;
+border: #0a0606;
+font-size: large;
+margin-left: -3px;
+}
