@@ -1,37 +1,71 @@
 
 <!--Code written by Adam Dono on the 2023/06/10  -->
 <!--NavBar-->
-<ul class="nav justify-content-center ">
 
+
+
+
+
+<!-- Container for the navigation -->
+<div class="large-screen-only">
+  <ul class="nav justify-content-center">
+    <div class="logo">
+      <img src="../assets/nero-low-resolution-logo-color-on-transparent-background.png" alt="img">
+    </div>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['../landing']"><span>HOME</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/about']">ABOUT</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/purchase']">BUY & SELL</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/marketplace']">NFT'S</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/nerotoken']">NERO</a>
+    </li>
+    <button type="button" [routerLink]="['/register']" class="btn2 btn-secondary btn-sm">&nbsp; Sign Up&nbsp;</button>
+    <button type="button" [routerLink]="['/login']" class="btn3 btn-light btn-sm">&nbsp; Log In&nbsp;</button>
+  </ul>
+</div>
+  
+
+<!-- Navbar for mobile view -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary d-lg-none">
+  <div class="container-fluid">
     <div class="logo">  <img src="../assets/nero-low-resolution-logo-color-on-transparent-background.png" alt="img">
    
   
     </div>
-  
-   <li class="nav-item">
-    
-    <li class="nav-item">
-      <a class="nav-link" [routerLink]="['../landing']"> <span>HOME</span></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link   " [routerLink]="['/about']">ABOUT</a>
-    </li>
-   
-    <li class="nav-item">
-      <a class="nav-link"  [routerLink]="['/purchase']">  BUY & SELL</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link"  [routerLink]="['/marketplace']">NFT'S</a>
-    </li>
-  
-    <li class="nav-item">
-      <a class="nav-link" [routerLink]="['/nerotoken']">NERO</a>
-    </li>
-  
- <button type="button"  [routerLink]="['/register']" class="btn btn-secondary btn-sm"> &nbsp; Sign Up&nbsp; </button>
- <button type="button" [routerLink]="['/login']" class="btn btn-light btn-sm "> &nbsp; Log In&nbsp;</button>
-  </ul>
-  
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" [routerLink]="['../landing']">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/about']">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/purchase']">Buy & Sell</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/marketplace']">NFT's</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/nerotoken']">Nero</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
 
 <!--header section-->
 <section class="landing" >
@@ -40,7 +74,7 @@
       <div class="col content">
         <h2 class="head" >From <span> Meme </span>to  <span>Stable Coins </span></h2>
         <p class="slogan" >Buy & Sell Crypto.</p>
-       <button type="button" class="btn don-secondary btn-sm"> &nbsp; Explore Crypto &nbsp; </button>
+       <button type="button" class="btn don-secondary"> &nbsp; Explore Crypto &nbsp; </button>
         <div class="appi">
           
         <p class="font" >  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="25" viewBox="0,0,256,256"
@@ -196,11 +230,11 @@
       <p class="best" >Certificate programs for traders are specialized educational courses designed to equip individuals with the knowledge and skills required to excel in the world of Blockchain and Cryptocurrencies. These programs are particularly valuable for aspiring traders, whether they are beginners looking to enter the field or experienced professionals seeking to enhance their expertise.
       </p>
   
-      <div class="batton" >   <button type="button" class="btn btn-light btn-sm"> &nbsp; Learn About Crypto &nbsp;</button>
+      <div class="batton3" >   <button type="button1" class="btn4"> &nbsp; Learn About Crypto &nbsp;</button>
       </div>
   </div>
   
-  
+
     <div class="slider">
       <div class="slide-track">
         <div class="slide">
@@ -284,7 +318,7 @@
       <div class="text-section">
         <h2><span>Buy</span> Sell and Create <Span>Nfts</Span> </h2>
         <p class="best"> NFTs (Non-Fungible Tokens) has become a popular and exciting aspect of the digital world. NFTs are unique digital assets that represent ownership, whether it's digital art, collectibles, music, or even virtual real estate.</p>
-        <button type="button" class="btn btn-secondary btn-sm"> &nbsp; Explore Nft's &nbsp; </button>
+        <button type="button" class="btn5 btn-secondary btn-sm"> &nbsp; Explore Nft's &nbsp; </button>
   
       </div>
     </div>
@@ -313,15 +347,7 @@
                     <p class="small text-muted">Welcome to Nero, your gateway to the exciting world of cryptocurrencies</p>
                     <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary" href="#">Nero</a></p>
                 </div>
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="text-black mb-3">Quick links</h5>
-                    <ul class="list-unstyled text-muted">
-                        <li><a>Home</a></li>
-                        <li><a [routerLink]="['/about']">About</a></li>
-                        <li><a href="#">Get started</a></li>
-                        <li><a href="#">Market Place</a></li>
-                    </ul>
-                </div>
+           
               
            
             </div>

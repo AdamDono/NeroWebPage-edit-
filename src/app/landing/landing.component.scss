@@ -23,8 +23,7 @@ margin-top: 35px;
    margin-right: 10px;
    border-radius: 10px;
    margin-left: 100px;
-
-   background-color:#155F63;
+   background-color:#145F63;
   }
  
 
@@ -350,4 +349,56 @@ margin-top: 50px;
 .btn{
   border-radius: 17px;
   box-shadow: 17px 18px 17px -2px rgba(0,0,0,0.15);
+  background-color: #145F63;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .large-screen-only {
+    display: none;
+  }
+}
+
+.btn4{
+  width: 200px;
+height: 45px;
+border-radius: 17px;
+color: #dce9e9;
+background-color:#145F63;
+border: #ffffff;
+font-size: large;
+}
+.btn5{
+  width: 200px;
+height: 45px;
+border-radius: 17px;
+color: #dce9e9;
+background-color:#145F63;
+border: #ffffff;
+font-size: large;
+margin-left: -3px;
+}
+
+.btn2{
+  width: 136px;
+height: 35px;
+
+color: #dce9e9;
+background-color:#145F63;
+border: #ffffff;
+margin-right: 40px;
+font-size: large;
+
+}
+
+
+.btn3{
+  width: 136px;
+height: 35px;
+margin-left: 200px;
+color: #070808;
+background-color:#F5F5F5;
+border: #0a0606;
+font-size: large;
+margin-left: -3px;
 }

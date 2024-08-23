@@ -2,38 +2,62 @@
 <!--Code written by Adam Dono on the -->
 
 
-<!--NavBar-->
-<ul class="nav justify-content-center ">
 
+<!-- Container for the navigation -->
+<div class="large-screen-only">
+  <ul class="nav justify-content-center">
+    <div class="logo">
+      <img src="../assets/nero-low-resolution-logo-color-on-transparent-background.png" alt="img">
+    </div>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['../landing']"><span>HOME</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/about']">ABOUT</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/purchase']">BUY & SELL</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/marketplace']">NFT'S</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/nerotoken']">NERO</a>
+    </li>
+    <button type="button" [routerLink]="['/register']" class="btn2 btn-secondary btn-sm">&nbsp; Sign Up&nbsp;</button>
+    <button type="button" [routerLink]="['/login']" class="btn3 btn-light btn-sm">&nbsp; Log In&nbsp;</button>
+  </ul>
+</div>
+  
+
+<!-- Navbar for mobile view -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary d-lg-none">
+  <div class="container-fluid">
     <div class="logo">  <img src="../assets/nero-low-resolution-logo-color-on-transparent-background.png" alt="img">
    
   
     </div>
-  
-   <li class="nav-item">
-  
-    <li class="nav-item">
-      <a class="nav-link" [routerLink]="['../landing']">HOME</a>
-    </li>
-  
-    <li class="nav-item">
-      <a class="nav-link" [routerLink]="['/about']">ABOUT</a>
-    </li>
-   
-    <li class="nav-item">
-      <a class="nav-link"  [routerLink]="['/purchase']">BUY & SELL</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link"  [routerLink]="['/marketplace']">NFT'S</a>
-    </li>
-  
-    <li class="nav-item">
-      <a class="nav-link" [routerLink]="['/nerotoken']"><span>NERO</span></a>
-    </li>
-  
-  <button type="button"  [routerLink]="['/register']" class="btn btn-secondary btn-sm"> &nbsp; Sign Up&nbsp; </button>
-  <button type="button" [routerLink]="['/login']" class="btn btn-light btn-sm "> &nbsp; Log In&nbsp;</button>
-   
-  
-  </ul>
-  
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" [routerLink]="['../landing']">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/about']">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/purchase']">Buy & Sell</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/marketplace']">NFT's</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/nerotoken']">Nero</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
